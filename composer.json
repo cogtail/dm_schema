@@ -1,0 +1,19 @@
+{
+    "name": "die-medialen/dm-schema",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://www.diemedialen.de/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^9.5 || ^10.4",
+        "typo3/cms-fluid-styled-content": "^9.5 || ^10.4",
+        "brotkrueml/schema": "~1.7"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "DieMedialen\\DmSchema\\": "Classes/"
+        }
+    }
+}
