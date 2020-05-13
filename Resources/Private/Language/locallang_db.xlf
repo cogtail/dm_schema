@@ -6,6 +6,9 @@
             <authorEmail>daniel.hasselberg@diemedialen.de</authorEmail>
         </header>
         <body>
+            <trans-unit id="dm_schema_faq.title">
+                <source>FAQ Element</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

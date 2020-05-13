@@ -1,0 +1,10 @@
+plugin.tx_dmschema {
+    view {
+        # cat=plugin.tx_dmschema/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:dm_schema/Resources/Private/Templates
+        # cat=plugin.tx_dmschema/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:dm_schema/Resources/Private/Partials
+        # cat=plugin.tx_dmschema/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:dm_schema/Resources/Private/Layouts
+    }
+}

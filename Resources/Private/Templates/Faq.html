@@ -1,0 +1,20 @@
+<html data-namespace-typo3-fluid="true"
+      lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers"
+      schema:schemaLocation="https://brot.krue.ml/schemas/schema-1.7.0.xsd"
+>
+<f:layout name="Default" />
+<f:section name="Main">
+    <schema:type.Question
+        -isMainEntityOfWebPage="1"
+        -as="mainEntity"
+        name="{data.header}">
+        <schema:type.Answer
+            -as="acceptedAnswer"
+            text="{data.bodytext}"
+        />
+    </schema:type.Question>
+
+</f:section>
+</html>

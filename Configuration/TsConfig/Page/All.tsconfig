@@ -1,0 +1,4 @@
+#
+# PageTS for Dm Schema
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dm_schema/Configuration/TsConfig/Page/Mod/Wizards/CustomContentElements.tsconfig">
