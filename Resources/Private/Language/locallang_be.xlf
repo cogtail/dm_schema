@@ -6,17 +6,98 @@
             <authorEmail>daniel.hasselberg@diemedialen.de</authorEmail>
         </header>
         <body>
+            <!--    Extension    -->
+            <trans-unit id="dm_schema.wizard.title">
+                <source>Rich Results</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.preview.title">
+                <source>Richresult</source>
+            </trans-unit>
+
+            <!--    Element    -->
             <trans-unit id="dm_schema_faq.title">
                 <source>FAQ Element</source>
             </trans-unit>
             <trans-unit id="dm_schema_faq.description">
-                <source>An element to define a question and an answer</source>
+                <source>A snippet to define a question and an answer</source>
             </trans-unit>
-            <trans-unit id="content_element.dm_schema_faq.tca.question">
+            <trans-unit id="dm_schema_jobposting.title">
+                <source>Job Posting</source>
+            </trans-unit>
+            <trans-unit id="dm_schema_jobposting.description">
+                <source>A snippet to define a jobposting</source>
+            </trans-unit>
+            <trans-unit id="dm_schema_localbusiness.title">
+                <source>Local Business</source>
+            </trans-unit>
+            <trans-unit id="dm_schema_localbusiness.description">
+                <source>A snippet to define a local business</source>
+            </trans-unit>
+            <trans-unit id="dm_schema_event.title">
+                <source>Event</source>
+            </trans-unit>
+            <trans-unit id="dm_schema_event.description">
+                <source>A snippet to define a event</source>
+            </trans-unit>
+
+
+            <!--    TCA    -->
+            <trans-unit id="dm_schema.tca.tx_dmschema_question">
                 <source>Question</source>
             </trans-unit>
-            <trans-unit id="content_element.dm_schema_faq.tca.answer">
+            <trans-unit id="dm_schema.tca.tx_dmschema_answer">
                 <source>Answer</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_date_posted">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_valid_through">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_name">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_same_as">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_logo">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_street_address">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_locality">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_region">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_postal_code">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_country">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_currency">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_min">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_max">
+                <source>xxx</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit">
+                <source>xxx</source>
             </trans-unit>
         </body>
     </file>

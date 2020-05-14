@@ -20,4 +20,16 @@ tt_content {
     dm_schema_faq {
         templateName = Faq
     }
+    dm_schema_jobposting =< lib.dmContentElement
+    dm_schema_jobposting {
+        templateName = JobPosting
+    }
+    dm_schema_localbusiness =< lib.dmContentElement
+    dm_schema_localbusiness {
+        templateName = LocalBusiness
+    }
+    dm_schema_event =< lib.dmContentElement
+    dm_schema_event {
+        templateName = Event
+    }
 }

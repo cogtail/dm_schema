@@ -1,0 +1,8 @@
+<f:comment><f:render partial="Preview/HeaderContent" arguments="{_all}"/></f:comment>
+<strong>
+    <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.preview.title" /> <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:{CType}.title" />
+</strong>
+<br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_faq.tca.question" />: </strong>{header}
+<br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_faq.tca.answer" />: </strong>{bodytext -> f:format.crop(maxCharacters: 50, append: '...')}

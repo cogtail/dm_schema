@@ -1,8 +1,8 @@
 <f:comment><f:render partial="Preview/HeaderContent" arguments="{_all}"/></f:comment>
 <strong>
-    Richresult <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_db.xlf:{CType}.title" />
+    <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.preview.title" /> <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:{CType}.title" />
 </strong>
 <br>
-<strong>Question: </strong>{header}
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_question" />: </strong>{tx_dmschema_question}
 <br>
-<strong>Answer: </strong>{bodytext -> f:format.crop(maxCharacters: 50, append: '...')}
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_answer" />: </strong>{tx_dmschema_answer -> f:format.crop(maxCharacters: 50, append: '...')}

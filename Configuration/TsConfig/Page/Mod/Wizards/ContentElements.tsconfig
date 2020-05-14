@@ -1,0 +1,45 @@
+mod.wizards.newContentElement.wizardItems.schema {
+    header = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.wizard.title
+    elements {
+        dm_schema_faq {
+            iconIdentifier = content-special-html
+            title = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_faq.title
+            description = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_faq.description
+            tt_content_defValues {
+                CType = dm_schema_faq
+            }
+        }
+        dm_schema_jobposting {
+            iconIdentifier = content-special-html
+            title = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_jobposting.title
+            description = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_jobposting.description
+            tt_content_defValues {
+                CType = dm_schema_jobposting
+            }
+        }
+        dm_schema_localbusiness {
+            iconIdentifier = content-special-html
+            title = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_localbusiness.title
+            description = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_localbusiness.description
+            tt_content_defValues {
+                CType = dm_schema_localbusiness
+            }
+        }
+        dm_schema_event {
+            iconIdentifier = content-special-html
+            title = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_event.title
+            description = LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_event.description
+            tt_content_defValues {
+                CType = dm_schema_event
+            }
+        }
+    }
+    show := addToList(*)
+}
+
+mod.web_layout.tt_content.preview {
+    dm_schema_faq               = EXT:dm_schema/Resources/Private/Preview/Faq.html
+    dm_schema_jobposting        = EXT:dm_schema/Resources/Private/Preview/JobPosting.html
+    dm_schema_localbusiness     = EXT:dm_schema/Resources/Private/Preview/LocalBusiness.html
+    dm_schema_event             = EXT:dm_schema/Resources/Private/Preview/Event.html
+}
