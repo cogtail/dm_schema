@@ -6,6 +6,37 @@
 >
 <f:layout name="Default" />
 <f:section name="Main">
-
+    <schema:type.JobPosting
+        title="{data.tx_dmschema_title}"
+        description="{data.tx_dmschema_description}"
+        datePosted="{f:format.date(date: data.tx_dmschema_date_posted, format: 'c')}"
+        validThrough="{f:format.date(date: data.tx_dmschema_valid_through, format: 'c')}"
+        employmentType="{data.tx_dmschema_employment_type}">
+        <schema:type.organization
+            -as="hiringOrganization"
+            name="{data.tx_dmschema_hiring_organization_name}"
+            sameAs="{data.tx_dmschema_hiring_organization_same_as}"
+            logo="{f:uri.image(image: tx_dmschema_hiring_organization_logo_img.0, absolute: 'true')}"
+        />
+        <schema:type.place
+            -as="jobLocation">
+            <schema:type.postalAddress
+                -as="address"
+                streetAddress="{data.tx_dmschema_job_location_place_street_address}"
+                addressLocality="{data.tx_dmschema_job_location_place_address_locality}"
+                addressRegion="{data.tx_dmschema_job_location_place_address_region}"
+                postalCode="{data.tx_dmschema_job_location_place_postal_code}"
+                addressCountry="{data.tx_dmschema_job_location_place_address_country}"
+            />
+        </schema:type.place>
+        <schema:type.monetaryAmount
+            -as="baseSalary"
+            currency="{data.tx_dmschema_base_salary_currency}">
+            <schema:type.quantitativeValue
+                -as="value"
+                value="{data.tx_dmschema_base_salary_value_min}"
+                unitText="{data.tx_dmschema_base_salary_value_unit}"/>
+        </schema:type.monetaryAmount>
+    </schema:type.JobPosting>
 </f:section>
 </html>

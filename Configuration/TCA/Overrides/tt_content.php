@@ -131,17 +131,9 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_hiring_organization_same_as',
         'config' => [
             'type' => 'input',
-            'renderType' => 'inputLink',
             'size' => 50,
             'max' => 1024,
             'eval' => 'trim',
-            'fieldControl' => [
-                'linkPopup' => [
-                    'options' => [
-                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-                    ],
-                ],
-            ],
             'softref' => 'typolink'
         ]
     ],
@@ -276,23 +268,23 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_employment_type.HOUR',
+                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_base_salary_value_unit.HOUR',
                     'HOUR'
                 ],
                 [
-                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_employment_type.DAY',
+                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_base_salary_value_unit.DAY',
                     'DAY'
                 ],
                 [
-                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_employment_type.WEEK',
+                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_base_salary_value_unit.WEEK',
                     'WEEK'
                 ],
                 [
-                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_employment_type.MONTH',
+                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_base_salary_value_unit.MONTH',
                     'MONTH'
                 ],
                 [
-                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_employment_type.YEAR',
+                    'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_base_salary_value_unit.YEAR',
                     'YEAR'
                 ]
             ],

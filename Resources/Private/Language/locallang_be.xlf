@@ -55,49 +55,102 @@
                 <source>Description</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_date_posted">
-                <source>xxx</source>
+                <source>Date posted</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_valid_through">
-                <source>xxx</source>
+                <source>Valid through</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_employment_type">
-                <source>xxx</source>
+                <source>Employment type</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.FULL_TIME">
+                <source>Full-time</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.PART_TIME">
+                <source>Part-time</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.CONTRACTOR">
+                <source>Contractor</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.TEMPORARY">
+                <source>Temporary</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.INTERN">
+                <source>Intern</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.VOLUNTEER">
+                <source>Volunteer</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.PER_DIEM">
+                <source>Per-diem</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_employment_type.OTHER">
+                <source>Other</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_name">
-                <source>xxx</source>
+                <source>HiringOrganization name</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_same_as">
-                <source>xxx</source>
+                <source>HiringOrganization sameAs</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_logo">
-                <source>xxx</source>
+                <source>HiringOrganization logo</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_street_address">
-                <source>xxx</source>
+                <source>JobLocation place streetAddress</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_locality">
-                <source>xxx</source>
+                <source>JobLocation place addressLocality</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_region">
-                <source>xxx</source>
+                <source>JobLocation place addressRegion</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_postal_code">
-                <source>xxx</source>
+                <source>JobLocation place postalCode</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_country">
-                <source>xxx</source>
+                <source>JobLocation place addressCountry</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_currency">
-                <source>xxx</source>
+                <source>BaseSalary currency</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_min">
-                <source>xxx</source>
+                <source>BaseSalary valueMin</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_max">
-                <source>xxx</source>
+                <source>BaseSalary valueMax</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit">
-                <source>xxx</source>
+                <source>BaseSalary valueUnit</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit.HOUR">
+                <source>Hour</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit.DAY">
+                <source>Day</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit.WEEK">
+                <source>Week</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit.MONTH">
+                <source>Month</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit.YEAR">
+                <source>Year</source>
+            </trans-unit>
+
+            <!--    Palette    -->
+            <trans-unit id="dm_schema.palette.dm_schema_jobposting_header">
+                <source>Job posting</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_jobposting_hiring_organization">
+                <source>Hiring organization</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_jobposting_job_location">
+                <source>Job location</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_jobposting_base_salary">
+                <source>Base salary</source>
             </trans-unit>
         </body>
     </file>

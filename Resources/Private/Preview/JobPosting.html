@@ -1,8 +1,10 @@
 <f:comment><f:render partial="Preview/HeaderContent" arguments="{_all}"/></f:comment>
 <strong>
     <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.preview.title" /> <f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:{CType}.title" />
-</strong>
-<br>
-<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_faq.tca.question" />: </strong>{header}
-<br>
-<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema_faq.tca.answer" />: </strong>{bodytext -> f:format.crop(maxCharacters: 50, append: '...')}
+</strong><br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_title" />: </strong>{tx_dmschema_title}<br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_description" />: </strong>{tx_dmschema_description -> f:format.crop(maxCharacters: 100, append: '&nbsp;...')}<br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_date_posted" />: </strong>{f:format.date(date: tx_dmschema_date_posted, format: 'd.m.y H:i:s')}<br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_valid_through" />: </strong>{f:format.date(date: tx_dmschema_valid_through, format: 'd.m.y H:i:s')}<br>
+<strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_employment_type" />: </strong><f:translate key="LLL:EXT:dm_schema/Resources/Private/Language/locallang_be.xlf:dm_schema.tca.tx_dmschema_employment_type.{tx_dmschema_employment_type}" /><br>
+

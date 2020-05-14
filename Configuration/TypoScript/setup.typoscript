@@ -23,6 +23,15 @@ tt_content {
     dm_schema_jobposting =< lib.dmContentElement
     dm_schema_jobposting {
         templateName = JobPosting
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        dataProcessing.10 {
+            if.isTrue.field = tx_dmschema_hiring_organization_logo
+            references {
+                fieldName = tx_dmschema_hiring_organization_logo
+                table = tt_content
+            }
+            as = tx_dmschema_hiring_organization_logo_img
+        }
     }
     dm_schema_localbusiness =< lib.dmContentElement
     dm_schema_localbusiness {
