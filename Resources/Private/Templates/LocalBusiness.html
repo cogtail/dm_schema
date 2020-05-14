@@ -2,19 +2,27 @@
       lang="en"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers"
-      schema:schemaLocation="https://brot.krue.ml/schemas/schema-1.7.0.xsd"
->
+      schema:schemaLocation="https://brot.krue.ml/schemas/schema-1.7.0.xsd">
 <f:layout name="Default" />
 <f:section name="Main">
-    <schema:type.Question
-        -isMainEntityOfWebPage="1"
-        -as="mainEntity"
-        name="{data.header}">
-        <schema:type.Answer
-            -as="acceptedAnswer"
-            text="{data.bodytext}"
-        />
-    </schema:type.Question>
-
+    <schema:type.localBusiness
+        -id="{data.tx_dmschema_id}"
+        url="{data.tx_dmschema_url}"
+        name="{data.tx_dmschema_title}"
+        telephone="{data.tx_dmschema_telephone}">
+        <f:for as="image" each="{tx_dmschema_localbusiness_images}">
+            <schema:type.imageObject
+                -as="image"
+                url="{f:uri.image(image: image, absolute: 'true')}">
+            </schema:type.imageObject>
+        </f:for>
+        <schema:type.postalAddress
+            -as="address"
+            streetAddress="{data.tx_dmschema_address_street_address}"
+            addressLocality="{data.tx_dmschema_address_address_locality}"
+            addressRegion="{data.tx_dmschema_address_address_region}"
+            postalCode="{data.tx_dmschema_address_postal_code}"
+            addressCountry="{data.tx_dmschema_address_address_country}"/>
+    </schema:type.localBusiness>
 </f:section>
 </html>

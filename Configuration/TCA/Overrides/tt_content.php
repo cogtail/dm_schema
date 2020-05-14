@@ -181,36 +181,45 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
             ],
         ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
     ],
-    'tx_dmschema_job_location_place_street_address' => [
+    'tx_dmschema_address_street_address' => [
         'l10n_mode' => 'prefixLangTitle',
-        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_job_location_place_street_address',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_address_street_address',
         'config' => [
             'type' => 'input',
             'size' => 50,
             'max' => 255,
         ],
     ],
-    'tx_dmschema_job_location_place_address_locality' => [
+    'tx_dmschema_location_name' => [
         'l10n_mode' => 'prefixLangTitle',
-        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_job_location_place_address_locality',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_location_name',
         'config' => [
             'type' => 'input',
             'size' => 50,
             'max' => 255,
         ],
     ],
-    'tx_dmschema_job_location_place_address_region' => [
+    'tx_dmschema_address_address_locality' => [
         'l10n_mode' => 'prefixLangTitle',
-        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_job_location_place_address_region',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_address_address_locality',
         'config' => [
             'type' => 'input',
             'size' => 50,
             'max' => 255,
         ],
     ],
-    'tx_dmschema_job_location_place_postal_code' => [
+    'tx_dmschema_address_address_region' => [
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_address_address_region',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+    'tx_dmschema_address_postal_code' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_job_location_place_postal_code',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_address_postal_code',
         'config' => [
             'type' => 'input',
             'size' => 50,
@@ -218,9 +227,9 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
             'eval' => 'int,required',
         ]
     ],
-    'tx_dmschema_job_location_place_address_country' => [
+    'tx_dmschema_address_address_country' => [
         'l10n_mode' => 'prefixLangTitle',
-        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_job_location_place_address_country',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_address_address_country',
         'config' => [
             'type' => 'input',
             'size' => 50,
@@ -290,5 +299,94 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
             ],
             'default' => 'MONTH'
         ]
+    ],
+    'tx_dmschema_id' => [
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_id',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+    'tx_dmschema_geo_latitude' => [
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_geo_latitude',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+    'tx_dmschema_geo_longitude' => [
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_geo_longitude',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+    'tx_dmschema_url' => [
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_url',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+    'tx_dmschema_telephone' => [
+        'l10n_mode' => 'prefixLangTitle',
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_telephone',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+    'tx_dmschema_localbusiness_image' => [
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_localbusiness_image',
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('tx_dmschema_localbusiness_image', [
+            'appearance' => [
+                'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
+            ],
+            // custom configuration for displaying fields in the overlay/reference table
+            // to use the imageoverlayPalette instead of the basicoverlayPalette
+            'overrideChildTca' => [
+                'types' => [
+                    '0' => [
+                        'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+                        'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                        'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+                        'showitem' => '
+                                --palette--;;audioOverlayPalette,
+                                --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+                        'showitem' => '
+                                --palette--;;videoOverlayPalette,
+                                --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+                        'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
+                    ]
+                ],
+            ],
+        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
     ],
 ]);

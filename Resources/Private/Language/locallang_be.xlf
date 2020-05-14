@@ -96,20 +96,20 @@
             <trans-unit id="dm_schema.tca.tx_dmschema_hiring_organization_logo">
                 <source>HiringOrganization logo</source>
             </trans-unit>
-            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_street_address">
-                <source>JobLocation place streetAddress</source>
+            <trans-unit id="dm_schema.tca.tx_dmschema_address_street_address">
+                <source>Street address</source>
             </trans-unit>
-            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_locality">
-                <source>JobLocation place addressLocality</source>
+            <trans-unit id="dm_schema.tca.tx_dmschema_address_address_locality">
+                <source>Address locality</source>
             </trans-unit>
-            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_region">
-                <source>JobLocation place addressRegion</source>
+            <trans-unit id="dm_schema.tca.tx_dmschema_address_address_region">
+                <source>Address region</source>
             </trans-unit>
-            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_postal_code">
-                <source>JobLocation place postalCode</source>
+            <trans-unit id="dm_schema.tca.tx_dmschema_address_postal_code">
+                <source>Postal code</source>
             </trans-unit>
-            <trans-unit id="dm_schema.tca.tx_dmschema_job_location_place_address_country">
-                <source>JobLocation place addressCountry</source>
+            <trans-unit id="dm_schema.tca.tx_dmschema_address_address_country">
+                <source>Address country</source>
             </trans-unit>
             <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_currency">
                 <source>BaseSalary currency</source>
@@ -138,19 +138,43 @@
             <trans-unit id="dm_schema.tca.tx_dmschema_base_salary_value_unit.YEAR">
                 <source>Year</source>
             </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_id">
+                <source>Id</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_geo_latitude">
+                <source>Geo latitude</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_geo_longitude">
+                <source>Geo longitude</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_url">
+                <source>Url</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_telephone">
+                <source>Telephone</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_localbusiness_image">
+                <source>Images</source>
+            </trans-unit>
 
             <!--    Palette    -->
-            <trans-unit id="dm_schema.palette.dm_schema_jobposting_header">
+            <trans-unit id="dm_schema.palette.dm_schema_header">
                 <source>Job posting</source>
             </trans-unit>
-            <trans-unit id="dm_schema.palette.dm_schema_jobposting_hiring_organization">
+            <trans-unit id="dm_schema.palette.dm_schema_hiring_organization">
                 <source>Hiring organization</source>
             </trans-unit>
-            <trans-unit id="dm_schema.palette.dm_schema_jobposting_job_location">
+            <trans-unit id="dm_schema.palette.dm_schema_job_location">
                 <source>Job location</source>
             </trans-unit>
-            <trans-unit id="dm_schema.palette.dm_schema_jobposting_base_salary">
+            <trans-unit id="dm_schema.palette.dm_schema_base_salary">
                 <source>Base salary</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_localbusiness">
+                <source>Local Business</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_localbusiness_location">
+                <source>Address</source>
             </trans-unit>
         </body>
     </file>
