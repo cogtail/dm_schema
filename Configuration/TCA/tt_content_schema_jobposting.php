@@ -40,11 +40,11 @@ $GLOBALS['TCA']['tt_content']['palettes']['dm_schema_jobposting_hiring_organizat
 
 $GLOBALS['TCA']['tt_content']['palettes']['dm_schema_jobposting_job_location'] =
     [
-        'showitem' => ' tx_dmschema_job_location_place_street_address,--linebreak--,
-                        tx_dmschema_job_location_place_postal_code,
-                        tx_dmschema_job_location_place_address_locality,--linebreak--,
-                        tx_dmschema_job_location_place_address_region,
-                        tx_dmschema_job_location_place_address_country,
+        'showitem' => ' tx_dmschema_address_street_address,--linebreak--,
+                        tx_dmschema_address_postal_code,
+                        tx_dmschema_address_address_locality,--linebreak--,
+                        tx_dmschema_address_address_region,
+                        tx_dmschema_address_address_country,
                         '
     ];
 
@@ -66,10 +66,10 @@ $GLOBALS['TCA']['tt_content']['types']['dm_schema_jobposting'] = array_replace_r
         'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_jobposting_header;dm_schema_jobposting_header,
-                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_jobposting_hiring_organization;dm_schema_jobposting_hiring_organization,
-                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_jobposting_job_location;dm_schema_jobposting_job_location,
-                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_jobposting_base_salary;dm_schema_jobposting_base_salary,
+                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_header;dm_schema_jobposting_header,
+                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_hiring_organization;dm_schema_jobposting_hiring_organization,
+                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_job_location;dm_schema_jobposting_job_location,
+                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_base_salary;dm_schema_jobposting_base_salary,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                 --palette--;;hidden,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,

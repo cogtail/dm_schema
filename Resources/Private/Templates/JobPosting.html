@@ -2,8 +2,7 @@
       lang="en"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers"
-      schema:schemaLocation="https://brot.krue.ml/schemas/schema-1.7.0.xsd"
->
+      schema:schemaLocation="https://brot.krue.ml/schemas/schema-1.7.0.xsd">
 <f:layout name="Default" />
 <f:section name="Main">
     <schema:type.JobPosting
@@ -16,18 +15,16 @@
             -as="hiringOrganization"
             name="{data.tx_dmschema_hiring_organization_name}"
             sameAs="{data.tx_dmschema_hiring_organization_same_as}"
-            logo="{f:uri.image(image: tx_dmschema_hiring_organization_logo_img.0, absolute: 'true')}"
-        />
+            logo="{f:uri.image(image: tx_dmschema_hiring_organization_logo_img.0, absolute: 'true')}"/>
         <schema:type.place
             -as="jobLocation">
             <schema:type.postalAddress
                 -as="address"
-                streetAddress="{data.tx_dmschema_job_location_place_street_address}"
-                addressLocality="{data.tx_dmschema_job_location_place_address_locality}"
-                addressRegion="{data.tx_dmschema_job_location_place_address_region}"
-                postalCode="{data.tx_dmschema_job_location_place_postal_code}"
-                addressCountry="{data.tx_dmschema_job_location_place_address_country}"
-            />
+                streetAddress="{data.tx_dmschema_address_street_address}"
+                addressLocality="{data.tx_dmschema_address_address_locality}"
+                addressRegion="{data.tx_dmschema_address_address_region}"
+                postalCode="{data.tx_dmschema_address_postal_code}"
+                addressCountry="{data.tx_dmschema_address_address_country}"/>
         </schema:type.place>
         <schema:type.monetaryAmount
             -as="baseSalary"
