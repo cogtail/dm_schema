@@ -27,4 +27,6 @@ CREATE TABLE tt_content (
     tx_dmschema_geo_longitude varchar(255) default '' ,
     tx_dmschema_url varchar(255) default '' ,
     tx_dmschema_telephone varchar(255) default '',
+    tx_dmschema_event_image int(11) unsigned DEFAULT '0',
+    tx_dmschema_location_name varchar(255) default ''
 );

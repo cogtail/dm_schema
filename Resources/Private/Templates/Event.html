@@ -6,15 +6,29 @@
 >
 <f:layout name="Default" />
 <f:section name="Main">
-    <schema:type.Question
-        -isMainEntityOfWebPage="1"
-        -as="mainEntity"
-        name="{data.header}">
-        <schema:type.Answer
-            -as="acceptedAnswer"
-            text="{data.bodytext}"
-        />
-    </schema:type.Question>
+    <schema:type.event
+        name="{data.tx_dmschema_title}"
+        description="{data.tx_dmschema_description}"
+        startDate="{f:format.date(date: data.starttime, format: 'c')}"
+        endDate="{f:format.date(date: data.endtime, format: 'c')}"
+    >
+        <f:for as="image" each="{tx_dmschema_event_images}">
+            <schema:type.imageObject
+                -as="image"
+                url="{f:uri.image(image: image, absolute: 'true')}">
+            </schema:type.imageObject>
+        </f:for>
+        <schema:type.place
+            -as="location">
+            <schema:type.postalAddress
+                -as="address"
+                streetAddress="{data.tx_dmschema_address_street_address}"
+                addressLocality="{data.tx_dmschema_address_address_locality}"
+                addressRegion="{data.tx_dmschema_address_address_region}"
+                postalCode="{data.tx_dmschema_address_postal_code}"
+                addressCountry="{data.tx_dmschema_address_address_country}"/>
+        </schema:type.place>
+    </schema:type.event>
 
 </f:section>
 </html>

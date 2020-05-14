@@ -156,6 +156,18 @@
             <trans-unit id="dm_schema.tca.tx_dmschema_localbusiness_image">
                 <source>Images</source>
             </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_event_image">
+                <source>Images</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_starttime">
+                <source>Start date</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_endtime">
+                <source>End date</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.tca.tx_dmschema_location_name">
+                <source>Location name</source>
+            </trans-unit>
 
             <!--    Palette    -->
             <trans-unit id="dm_schema.palette.dm_schema_header">
@@ -175,6 +187,12 @@
             </trans-unit>
             <trans-unit id="dm_schema.palette.dm_schema_localbusiness_location">
                 <source>Address</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_event">
+                <source>Event</source>
+            </trans-unit>
+            <trans-unit id="dm_schema.palette.dm_schema_event_location">
+                <source>Location</source>
             </trans-unit>
         </body>
     </file>
