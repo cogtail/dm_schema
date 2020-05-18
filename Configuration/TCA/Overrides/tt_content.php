@@ -433,4 +433,31 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
             ],
         ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
     ],
+    'tx_dmschema_starttime' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_starttime',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime,int',
+            'default' => 0
+        ],
+        'l10n_mode' => 'exclude',
+        'l10n_display' => 'defaultAsReadonly'
+    ],
+    'tx_dmschema_endtime' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:'.$llFile.':dm_schema.tca.tx_dmschema_endtime',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime,int',
+            'default' => 0,
+            'range' => [
+                'upper' => mktime(0, 0, 0, 1, 1, 2038)
+            ]
+        ],
+        'l10n_mode' => 'exclude',
+        'l10n_display' => 'defaultAsReadonly'
+    ],
 ]);

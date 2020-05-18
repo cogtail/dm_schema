@@ -9,8 +9,8 @@
     <schema:type.event
         name="{data.tx_dmschema_title}"
         description="{data.tx_dmschema_description}"
-        startDate="{f:format.date(date: data.starttime, format: 'c')}"
-        endDate="{f:format.date(date: data.endtime, format: 'c')}"
+        startDate="{f:format.date(date: data.tx_dmschema_starttime, format: 'c')}"
+        endDate="{f:format.date(date: data.tx_dmschema_endtime, format: 'c')}"
     >
         <f:for as="image" each="{tx_dmschema_event_images}">
             <schema:type.imageObject

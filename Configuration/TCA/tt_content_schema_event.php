@@ -25,7 +25,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['dm_schema_event'] =
     [
         'showitem' => ' tx_dmschema_title,--linebreak--,
                         tx_dmschema_description,--linebreak--,
-                        starttime,endtime,--linebreak--,
+                        tx_dmschema_starttime,tx_dmschema_endtime,--linebreak--,
                         tx_dmschema_event_image,--linebreak--,'
     ];
 
