@@ -170,6 +170,9 @@
             </trans-unit>
 
             <!--    Palette    -->
+            <trans-unit id="dm_schema.palette.dm_schema_faq">
+                <source>FAQ</source>
+            </trans-unit>
             <trans-unit id="dm_schema.palette.dm_schema_header">
                 <source>Job posting</source>
             </trans-unit>

@@ -54,6 +54,39 @@ $GLOBALS['TCA']['tt_content']['types']['dm_schema_event'] = array_replace_recurs
                 --palette--;;hidden,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes, rowDescription,
-        '
+        ',
+        'columnsOverrides' => [
+            'tx_dmschema_address_address_locality' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_address_country' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_postal_code' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_street_address' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_title' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_starttime' => [
+                'config' => [
+                    'eval' => 'datetime,int,required',
+                    'default' => null
+                ],
+            ],
+        ]
     ]
 );

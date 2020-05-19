@@ -74,6 +74,65 @@ $GLOBALS['TCA']['tt_content']['types']['dm_schema_jobposting'] = array_replace_r
                 --palette--;;hidden,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes, rowDescription,
-        '
+        ',
+        'columnsOverrides' => [
+            'tx_dmschema_date_posted' => [
+                'config' => [
+                    'eval' => 'datetime,int,required',
+                    'default' => null
+                ],
+            ],
+            'tx_dmschema_valid_through' => [
+                'config' => [
+                    'eval' => 'datetime,int,required',
+                    'default' => null
+                ],
+            ],
+            'tx_dmschema_hiring_organization_name' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_address_locality' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_address_country' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_postal_code' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_address_street_address' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_title' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_description' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_base_salary_value_min' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_base_salary_currency' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ]
+        ]
     ]
 );

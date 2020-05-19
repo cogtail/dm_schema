@@ -21,6 +21,12 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
     ]
 );
 
+$GLOBALS['TCA']['tt_content']['palettes']['dm_schema_faq'] =
+    [
+        'showitem' => ' tx_dmschema_question,--linebreak--,
+                        tx_dmschema_answer'
+    ];
+
 /***************
  * Configure element type
  */
@@ -30,11 +36,23 @@ $GLOBALS['TCA']['tt_content']['types']['dm_schema_faq'] = array_replace_recursiv
         'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                tx_dmschema_question,tx_dmschema_answer,
+                --palette--;LLL:EXT:'.$llFile.':dm_schema.palette.dm_schema_faq;dm_schema_faq,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                 --palette--;;hidden,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes, rowDescription,
-        '
+        ',
+        'columnsOverrides' => [
+            'tx_dmschema_answer' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ],
+            'tx_dmschema_question' => [
+                'config' => [
+                    'eval' => 'trim,required'
+                ],
+            ]
+        ]
     ]
 );
