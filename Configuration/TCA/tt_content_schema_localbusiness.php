@@ -25,7 +25,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['dm_schema_localbusiness'] =
     [
         'showitem' => ' tx_dmschema_title,--linebreak--,
                         tx_dmschema_id,tx_dmschema_url,--linebreak--,
-                        tx_dmschema_geo_latitude,tx_dmschema_geo_longitude,--linebreak--,
                         tx_dmschema_telephone,--linebreak--,
                         tx_dmschema_localbusiness_image,--linebreak--,'
     ];
@@ -35,7 +34,8 @@ $GLOBALS['TCA']['tt_content']['palettes']['dm_schema_localbusiness_location'] =
                         tx_dmschema_address_postal_code,
                         tx_dmschema_address_address_locality,--linebreak--,
                         tx_dmschema_address_address_region,
-                        tx_dmschema_address_address_country,
+                        tx_dmschema_address_address_country,--linebreak--,
+                        tx_dmschema_geo_latitude,tx_dmschema_geo_longitude,
                         '
     ];
 
