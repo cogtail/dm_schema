@@ -10,29 +10,70 @@
         description="{data.tx_dmschema_description}"
         datePosted="{f:format.date(date: data.tx_dmschema_date_posted, format: 'c')}"
         validThrough="{f:format.date(date: data.tx_dmschema_valid_through, format: 'c')}"
-        employmentType="{data.tx_dmschema_employment_type}">
+        employmentType="{data.tx_dmschema_employment_type}"
+    >
         <schema:type.organization
             -as="hiringOrganization"
             name="{data.tx_dmschema_hiring_organization_name}"
-            sameAs="{data.tx_dmschema_hiring_organization_same_as}"
-            logo="{f:uri.image(image: tx_dmschema_hiring_organization_logo_img.0, absolute: 'true')}"/>
+        >
+            <f:if condition="{data.tx_dmschema_hiring_organization_same_as}">
+                <schema:property
+                    -as="sameAs"
+                    value="{data.tx_dmschema_hiring_organization_same_as}"
+                />
+            </f:if>
+            <f:if condition="{tx_dmschema_hiring_organization_logo_img}">
+                <schema:property
+                    -as="logo"
+                    value="{f:uri.image(image: tx_dmschema_hiring_organization_logo_img.0, absolute: 'true')}"
+                />
+            </f:if>
+        </schema:type.organization>
         <schema:type.place
-            -as="jobLocation">
+            -as="jobLocation"
+        >
             <schema:type.postalAddress
                 -as="address"
                 streetAddress="{data.tx_dmschema_address_street_address}"
                 addressLocality="{data.tx_dmschema_address_address_locality}"
-                addressRegion="{data.tx_dmschema_address_address_region}"
                 postalCode="{data.tx_dmschema_address_postal_code}"
-                addressCountry="{data.tx_dmschema_address_address_country}"/>
+                addressCountry="{data.tx_dmschema_address_address_country}"
+            >
+                <f:if condition="{data.tx_dmschema_address_address_region}">
+                    <schema:property
+                        -as="addressRegion"
+                        value="{data.tx_dmschema_address_address_region}"
+                    />
+                </f:if>
+            </schema:type.postalAddress>
         </schema:type.place>
         <schema:type.monetaryAmount
             -as="baseSalary"
-            currency="{data.tx_dmschema_base_salary_currency}">
+            currency="{data.tx_dmschema_base_salary_currency}"
+        >
             <schema:type.quantitativeValue
                 -as="value"
-                value="{data.tx_dmschema_base_salary_value_min}"
-                unitText="{data.tx_dmschema_base_salary_value_unit}"/>
+                unitText="{data.tx_dmschema_base_salary_value_unit}"
+            >
+                <f:if condition="{data.tx_dmschema_base_salary_value_min} && {data.tx_dmschema_base_salary_value_max}">
+                    <f:then>
+                        <schema:property
+                            -as="minValue"
+                            value="{data.tx_dmschema_base_salary_value_min}"
+                        />
+                        <schema:property
+                            -as="maxValue"
+                            value="{data.tx_dmschema_base_salary_value_max}"
+                        />
+                    </f:then>
+                    <f:else>
+                        <schema:property
+                            -as="value"
+                            value="{data.tx_dmschema_base_salary_value_min}"
+                        />
+                    </f:else>
+                </f:if>
+            </schema:type.quantitativeValue>
         </schema:type.monetaryAmount>
     </schema:type.JobPosting>
 </f:section>
