@@ -9,7 +9,7 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'max' => 255,
+            'max' => 255
         ],
     ],
     'tx_dmschema_answer' => [
@@ -18,11 +18,7 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'text',
             'cols' => '80',
-            'rows' => '15',
-            'softref' => 'typolink_tag,images,email[subst],url',
-            'search' => [
-                'andWhere' => '{#CType}=\'text\' OR {#CType}=\'textpic\' OR {#CType}=\'textmedia\''
-            ]
+            'rows' => '15'
         ]
     ],
     'tx_dmschema_title' => [
@@ -40,11 +36,7 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'text',
             'cols' => '80',
-            'rows' => '15',
-            'softref' => 'typolink_tag,images,email[subst],url',
-            'search' => [
-                'andWhere' => '{#CType}=\'text\' OR {#CType}=\'textpic\' OR {#CType}=\'textmedia\''
-            ]
+            'rows' => '15'
         ]
     ],
     'tx_dmschema_date_posted' => [
@@ -134,7 +126,7 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
             'size' => 50,
             'max' => 1024,
             'eval' => 'trim',
-            'softref' => 'typolink'
+            'softref' => 'typolink_tag,url'
         ]
     ],
     'tx_dmschema_hiring_organization_logo' => [
@@ -223,8 +215,7 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'max' => 5,
-            'eval' => 'int,required',
+            'eval' => 'trim',
         ]
     ],
     'tx_dmschema_address_address_country' => [
@@ -251,10 +242,6 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'range' => [
-                'lower' => 0,
-            ],
-            'eval' => 'int,required',
         ]
     ],
     'tx_dmschema_base_salary_value_max' => [
@@ -263,10 +250,6 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'range' => [
-                'lower' => 0,
-            ],
-            'eval' => 'int,required',
         ]
     ],
     'tx_dmschema_base_salary_value_unit' => [
@@ -306,7 +289,9 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'max' => 255,
+            'max' => 1024,
+            'eval' => 'trim',
+            'softref' => 'typolink_tag,url'
         ],
     ],
     'tx_dmschema_geo_latitude' => [
@@ -333,7 +318,9 @@ $llFile = 'dm_schema/Resources/Private/Language/locallang_be.xlf';
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'max' => 255,
+            'max' => 1024,
+            'eval' => 'trim',
+            'softref' => 'typolink_tag,url'
         ],
     ],
     'tx_dmschema_telephone' => [
