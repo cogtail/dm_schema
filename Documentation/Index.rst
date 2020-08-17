@@ -9,7 +9,7 @@
 .. _start:
 
 =============================================================
-Extension Name
+Dm Schema
 =============================================================
 
 :Version:
@@ -29,7 +29,10 @@ Extension Name
    `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
    license
 
-This extension is based on `schema <https://extensions.typo3.org/extension/schema/>`__, a very
+Hier soll dann noch ein table of content hin.
+
+This extension is based on `schema <https://extensions.typo3.org/extension/schema/>`__.
+Sehr coole extension um meta tags zu setzen - seo - ritchresults
 
 **TYPO3**
 
@@ -45,17 +48,35 @@ It is maintained as part of this third party extension.
 If you find an error or something is missing, please:
 `Report a Problem <https://github.com/DieMedialen/dm_schema/issues/new>`__
 
-**Extension Manual**
-
-This documentation is for the TYPO3 extension dm_schema.
+**Table of Contents**
 
 .. toctree::
-   :maxdepth: 3
-
    Introduction/Index
+
+.. toctree::
+   :caption: For Editors
+
    Editor/Index
+
+.. toctree::
+   :caption: For Integrators
+
    Installation/Index
    Configuration/Index
+
+.. toctree::
+   :caption: Developer Corner
+
    Developer/Index
+   Developer/Templating
+
+.. toctree::
+   :caption: Troubleshooting
+
    Changelog/Index
+   KnownProblems/Index
+
+
+.. toctree::
+
    Sitemap
