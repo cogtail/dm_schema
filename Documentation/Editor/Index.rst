@@ -1,89 +1,50 @@
 .. include:: ../Includes.txt
 
-.. index:: WebPage page property
-
 .. _for-editors:
-.. _webpage-types:
 
-==============
-Web page types
-==============
+===========
+For Editors
+===========
 
-Target group: **Editors**
+How to use the extension from the perspective of an editor.
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
+Think of common tasks that an editor is likely to perform:
 
-Adjustment of the web page type
-===============================
+- How do they complete them?
+- What problems are they likely to encounter?
+- What access do they require?
+- What configuration options are available to them?
 
-As an editor you have the possibility to adjust the type of every single web
-page for the schema markup. The default value is the most generic one:
-``WebPage``.
+One example could be adding a frontend plugin to a page and then configuring it.
 
-You'll find the field in the page properties under the :guilabel:`SEO` tab
-(with installed
-`seo system extension <https://docs.typo3.org/c/typo3/cms-seo/master/en-us/>`__)
-or under the :guilabel:`Metadata` tab (if the seo system extension is not
-installed):
+Language should be non-technical, aim to avoid using acronyms where possible.
 
-.. figure:: ../Images/Editor/TypeOfWebPage.png
-   :alt: Field in the page properties
+Be mindful that editors typically don't have administrative access to the installation.
 
-   Field *Type of web page* in the page properties
+.. tip::
 
+   Take a break from time to time.
 
-If no value is selected, *WebPage* is assumed.
+Admonitions should be used to warn the users about potential pitfalls.
+Attract their attention to important elements,
+or add some notes for for information (further reading, for example).
 
-.. note::
+Do not overuse admonitions like notes, important, etc.!
 
-   If the seo system extension is installed and the checkbox
-   :guilabel:`no_index` is activated, the field is not shown. This makes no
-   sense on pages which are ignored by search engines. But you can override this
-   behaviour with a
-   :ref:`slot/PSR-14 event <event-de-activate-embedding-of-markup>`.
+Provide screenshots as needed for making things clear.
+When creating screenshots, try using the Official Introduction Package.
 
+.. figure:: ../Images/UserManual/BackendView.png
+   :class: with-shadow
+   :alt: Backend view
 
-.. index:: WebPage types
+   Default Backend view (caption of the image)
 
-Available web page types
-========================
+Do not use huge full-screen images, unless it is necessary and serves a good purpose.
 
-.. _webpage-types-list:
+.. _editor-faq:
 
-`WebPage` is the most common web page type, the other types are more specific:
+FAQ
+===
 
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| Type                | Description                                                                       |
-+=+=+=+===============+===================================================================================+
-| WebPage             | This is the most generic type for a web page                                      |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | AboutPage         | Page about the site, the organization, the person behind the site, etc.           |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | CheckoutPage      | Checkout page in a web shop                                                       |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | CollectionPage    | Page about multiple things, like a paginated page listing blog posts, a product   |
-| |                   | category, etc.                                                                    |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | | MediaGallery    | A mixed-media page that can contains media such as images, videos, and other      |
-| | |                 | multimedia                                                                        |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | | | ImageGallery  | Page with an image gallery as the most valuable content                           |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | | | VideoGallery  | Page with a video gallery                                                         |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | ContactPage       | Page with contact information                                                     |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | FAQPage           | Page with frequently asked questions                                              |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | ImageGallery      | Page with an image gallery as the most valuable content                           |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | ItemPage          | Page about a single item, e.g. a blog posting, a photograph, a product            |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | ProfilePage       | Page for user profiles                                                            |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | QAPage            | A page with a question and one or more answers to this question                   |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
-| | SearchResultsPage | Page for the result pages of the search function                                  |
-+-+-+-+---------------+-----------------------------------------------------------------------------------+
+Possible subsection: FAQ
