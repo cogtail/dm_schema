@@ -69,6 +69,7 @@ If you find an error or something is missing, please:
     Editor/
     Editor/Index
     Editor/Elements
+    Editor/Elements/
     Editor/*
 
 
