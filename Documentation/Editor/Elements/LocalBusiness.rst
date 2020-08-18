@@ -11,7 +11,7 @@ The local business element
 what does this element do, which fields are there, screenshot of the creation + of the output
 
 .. figure:: ../../../Images/localbusiness_be.png
-   :width: 40vw
+   :width: 800px
    :class: with-shadow
    :alt: The backend view of a new local business
 

@@ -12,7 +12,7 @@ what does this element do, which fields are there, screenshot of the creation + 
 note: do always set more then 1 faq.
 
 .. figure:: /../Images/faq_be.png
-   :width: 40vw
+   :width: 800px
    :class: with-shadow
    :alt: The backend view of a new faq
 
