@@ -63,10 +63,8 @@ If you find an error or something is missing, please:
 
 .. toctree::
     :caption: For Editors
-    :glob:
+    :hidden:
 
-   Editor/Index
-   Editor/Elements/*
 
 .. toctree::
    :caption: Developer Corner
