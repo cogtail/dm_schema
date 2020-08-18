@@ -3,7 +3,7 @@
 .. _developer:
 
 ================
-Developer Corner
+For Developers
 ================
 
 Use this section to provide examples of code or detail any information that would be deemed relevant to a developer.

@@ -1,4 +1,7 @@
 .. include:: ../Includes.txt
+.. highlight:: shell
+
+.. index:: Installation
 
 .. _installation:
 
@@ -6,8 +9,19 @@
 Installation
 ============
 
-- How is the extension installed?
-- Are there any dependencies that need to be resolved?
+Target group: **Administrators**
 
-References to general TYPO3 documentation are possible,
-for example the :ref:`t3install:start`.
+.. note::
+
+   The extension is available for TYPO3 v9 LTS and TYPO3 v10 LTS.
+
+The recommended way to install this extension is by using Composer. In your
+Composer-based TYPO3 project root, just type::
+
+   composer req die-medialen/dm-schema
+
+and the recent stable version will be installed.
+
+You can also install the extension from the
+`TYPO3 Extension Repository (TER) <https://extensions.typo3.org/extension/dm_schema/>`__.
+

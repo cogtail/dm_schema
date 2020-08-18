@@ -29,10 +29,12 @@ Dm Schema
    `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
    license
 
-Hier soll dann noch ein table of content hin.
+.. rst-class:: horizbuttons-tip-m
 
-This extension is based on `schema <https://extensions.typo3.org/extension/schema/>`__.
-Sehr coole extension um meta tags zu setzen - seo - ritchresults
+- :ref:`for-editors`
+- :ref:`configuration`
+- :ref:`developer`
+- :ref:`known-problems`
 
 **TYPO3**
 
@@ -54,15 +56,15 @@ If you find an error or something is missing, please:
    Introduction/Index
 
 .. toctree::
-   :caption: For Editors
-
-   Editor/Index
-
-.. toctree::
    :caption: For Integrators
 
    Installation/Index
    Configuration/Index
+
+.. toctree::
+   :caption: For Editors
+
+   Editor/Index
 
 .. toctree::
    :caption: Developer Corner

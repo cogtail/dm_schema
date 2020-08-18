@@ -37,7 +37,7 @@
                 <source>Event</source>
             </trans-unit>
             <trans-unit id="dm_schema_event.description">
-                <source>A snippet to define a event</source>
+                <source>A snippet to define an event</source>
             </trans-unit>
 
 
