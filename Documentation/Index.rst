@@ -62,12 +62,15 @@ If you find an error or something is missing, please:
    Configuration/Index
 
 .. toctree::
-    :caption: For Editors
-    :hidden:
-    :glob:
+   :caption: For Editors
 
-    Editor/*
 
+   Editor/Index
+   Editor/Elements/Index
+   Editor/Elements/Event
+   Editor/Elements/Faq
+   Editor/Elements/JobPosting
+   Editor/Elements/LocalBusiness
 
 .. toctree::
    :caption: Developer Corner
