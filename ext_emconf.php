@@ -26,7 +26,7 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Daniel Hasselberg',
-    'author_email' => 'daniel.hasselberg@diemedialen.de',
+    'author_email' => 'dm_schema@diemedialen.de',
     'author_company' => 'Die Medialen GmbH',
-    'version' => '0.9.0',
+    'version' => '0.10.0',
 ];
