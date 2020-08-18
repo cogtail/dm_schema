@@ -14,10 +14,10 @@ In the new tab 'Rich Results' you will now find the following new content elemen
 .. figure:: ../Images/Overview.png
    :alt: The new tab 'Rich Results'
 
+* :ref:`Event <event>`
 * :ref:`FAQ <faq>`
 * :ref:`Job posting <job-posting>`
 * :ref:`Local business <local-business>`
-* :ref:`Event <event>`
 
 .. warning::
     No visible front-end output will be generated!
