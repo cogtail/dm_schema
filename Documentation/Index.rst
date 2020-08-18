@@ -65,11 +65,6 @@ If you find an error or something is missing, please:
     :caption: For Editors
     :hidden:
 
-    Editor
-    Editor/
-    Editor/Index
-    Editor/Elements
-    Editor/Elements/
     Editor/*
 
 
