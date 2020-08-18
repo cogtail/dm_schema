@@ -11,8 +11,8 @@ The faq element
 what does this element do, which fields are there, screenshot of the creation + of the output
 note: do always set more then 1 faq.
 
-.. figure:: ../../Images/faq_be.png
-   :width: 800px
+.. figure:: /../Images/faq_be.png
+   :width: 40vw
    :class: with-shadow
    :alt: The backend view of a new faq
 
