@@ -65,6 +65,10 @@ If you find an error or something is missing, please:
    :caption: For Editors
 
    Editor/Index
+   Editor/Elements/Event
+   Editor/Elements/Faq
+   Editor/Elements/JobPosting
+   Editor/Elements/LocalBusiness
 
 .. toctree::
    :caption: Developer Corner
