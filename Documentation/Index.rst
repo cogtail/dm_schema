@@ -64,6 +64,7 @@ If you find an error or something is missing, please:
 .. toctree::
     :caption: For Editors
     :hidden:
+    :glob:
 
     Editor/*
 
