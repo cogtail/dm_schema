@@ -8,24 +8,15 @@
 The faq element
 ===========
 
-what does this element do, which fields are there, screenshot of the creation + of the output
-note: do always set more then 1 faq.
+This element is a fixed pair of questions and answers.
+more information: `developers.google.com <https://developers.google.com/search/docs/data-types/faqpage>`__
 
 .. note::
 
    the page type must be faqpage and
    use at least 2 or more elements
+   it doesn't make any other sense either
 
-
-
-
-+---------------------+---------------------------------------------------+-------------------------------+
-| Field               | Description                                       | Requried                      |
-+=====================+===================================================+===============================+
-| Question            | This is the most generic type for a web page      | yes                           |
-+---------------------+---------------------------------------------------+-------------------------------+
-| Answer              | This is the most generic type for a web page      | yes                           |
-+---------------------+---------------------------------------------------+-------------------------------+
 
 .. figure:: ../../Images/FaqBe.png
    :width: 800px
@@ -33,3 +24,13 @@ note: do always set more then 1 faq.
    :alt: The backend view of a new faq
 
    The backend view of a new faq
+
+
++---------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Field               | Description                                                                                                                 | Requried                      |
++=====================+=============================================================================================================================+===============================+
+| Question            | A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document. | yes                           |
++---------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Answer              | An answer offered to a question                                                                                             | yes                           |
++---------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+
