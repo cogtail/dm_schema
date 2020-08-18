@@ -28,5 +28,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Daniel Hasselberg',
     'author_email' => 'dm_schema@diemedialen.de',
     'author_company' => 'Die Medialen GmbH',
-    'version' => '0.9.2',
+    'version' => '0.10.0',
 ];
