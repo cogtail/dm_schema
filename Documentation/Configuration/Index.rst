@@ -6,4 +6,6 @@
 Configuration
 =============
 
-The extension does not need any special configuration. Also take a look at the `configuration of schema <https://docs.typo3.org/p/brotkrueml/schema/master/en-us/Configuration/Index.html#configuration>`__.
+The extension does not need any special configuration.
+You can simply install the extension and get started.
+It's more like plug and play.

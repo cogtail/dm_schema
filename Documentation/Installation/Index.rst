@@ -13,7 +13,8 @@ Target group: **Administrators**
 
 .. note::
 
-   The extension is available for TYPO3 v9 LTS and TYPO3 v10 LTS.
+    The extension is based on the `schema <https://extensions.typo3.org/extension/schema/>`__ , which will be installed as a dependency!
+    Available for TYPO3 v9 LTS and TYPO3 v10 LTS.
 
 The recommended way to install this extension is by using Composer. In your
 Composer-based TYPO3 project root, just type::

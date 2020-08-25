@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '9.5.0-10.4.99',
             'fluid_styled_content' => '9.5.0-10.4.99',
-            'schema'=> '~1.7',
+            'schema'=> '~1.8',
         ],
         'conflicts' => [
         ],
@@ -26,7 +26,7 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Daniel Hasselberg',
-    'author_email' => 'dm_schema@diemedialen.de',
+    'author_email' => 'typo3@diemedialen.de',
     'author_company' => 'Die Medialen GmbH',
-    'version' => '0.10.0',
+    'version' => '1.0.0',
 ];

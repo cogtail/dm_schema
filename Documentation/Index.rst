@@ -22,7 +22,7 @@ Dm Schema
    Daniel Hasselberg
 
 :Email:
-   dm_schema@diemedialen.de
+   typo3@diemedialen.de
 
 :License:
    This extension documentation is published under the
