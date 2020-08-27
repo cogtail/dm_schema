@@ -5,7 +5,7 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Dm Schema',
-    'description' => '',
+    'description' => 'Content elements based on view helpers for schema.org markup',
     'category' => 'templates',
     'constraints' => [
         'depends' => [

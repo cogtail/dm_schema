@@ -1,10 +1,29 @@
 {
     "name": "die-medialen/dm-schema",
     "type": "typo3-cms-extension",
-    "description": "",
-    "homepage": "https://www.diemedialen.de/",
+    "description": "Content elements based on view helpers for schema.org markup",
+    "homepage": "https://github.com/DieMedialen/dm_schema",
+    "authors": [
+      {
+        "name": "Daniel Hasselberg",
+        "email": "typo3@diemedialen.de",
+        "homepage": "https://www.diemedialen.de/",
+        "role": "Developer"
+      }
+    ],
     "license": ["GPL-2.0-or-later"],
-    "keywords": ["TYPO3 CMS"],
+    "keywords": [
+      "TYPO3 CMS",
+      "TYPO3 extension",
+      "JSON-LD",
+      "Structured data",
+      "SEO",
+      "Content",
+      "Content elements",
+      "rich results",
+      "schema",
+      "schema.org"
+    ],
     "require": {
         "typo3/cms-core": "^9.5.0 || ^10.4.99",
         "typo3/cms-fluid-styled-content": "^9.5.0 || ^10.4.99",
