@@ -27,7 +27,7 @@
     "require": {
         "typo3/cms-core": "^9.5.0 || ^10.4.99",
         "typo3/cms-fluid-styled-content": "^9.5.0 || ^10.4.99",
-        "brotkrueml/schema": "~1.7"
+        "brotkrueml/schema": "~1.8"
 
     },
     "autoload": {
