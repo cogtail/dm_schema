@@ -1,5 +1,5 @@
 {
-    "name": "die-medialen/dm-schema",
+    "name": "cogtail/dm-schema",
     "type": "typo3-cms-extension",
     "description": "Content elements based on view helpers for schema.org markup",
     "homepage": "https://github.com/DieMedialen/dm_schema",
