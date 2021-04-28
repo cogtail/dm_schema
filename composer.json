@@ -25,7 +25,6 @@
       "schema.org"
     ],
     "require": {
-        "typo3/cms-core": "^9.5|^10.4",
         "brotkrueml/schema": "~1.8"
 
     },
